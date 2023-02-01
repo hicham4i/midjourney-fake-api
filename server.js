@@ -73,7 +73,7 @@ app.use(cors())
 app.use(express.static('img'));
 
 // routes fo post and user
-// app.use('/user', userRoutes)
+app.use('/user', userRoutes)
 app.use('/text2img', txt2imgRoutes)
 app.use('/img2img', img2imgRoutes)
 
