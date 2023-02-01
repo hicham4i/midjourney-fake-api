@@ -15,7 +15,7 @@ import { client } from './lib/discord.js';
 import { readAndSplit, sendImgToJourney, uploadImgToDiscord } from './lib/utils.js';
 
 dotenv.config()
-const token = 'MTA2ODQ1NjY4ODEzMjI5MjY0OA.GOykGc.bMTnh2M2MiOJW-FuTbVJOuGhnQtx7bYfbb-H70'; //Token that you saved in step 5 of this tutorial
+const token = process.env.DISCORD_TOKEN; //Token that you saved in step 5 of this tutorial
 
 // create express instance
 const app = express()
