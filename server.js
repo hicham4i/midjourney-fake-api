@@ -32,7 +32,7 @@ await page.type('#uid_11', 'jU5t!H$HYaDgrhV');
 client.on("ready", async () =>{
     console.log("The AI bot is online"); //message when bot is online
     await page.click('button[type="submit"] > div', {delay: 10});
-    await page.screenshot({path: `discord-load.png` });
+    await page.screenshot({path: `./img/discord-load.png` });
 });
 client.on("messageCreate", async (message) => {
     // console.log(`🚀 ~~~~~~~ client.on ~~~~~~~ message`, message.channelId);
@@ -57,6 +57,7 @@ client.on("messageCreate", async (message) => {
         console.log(`🚀 ~~~~~~~ client.on ~~~~~~~ error`, error);
     }
 });
+
 // Use Express's in-built middleware to parse json and form functionality
 app.use(urlencoded({extended:true}))
 app.use(json())
@@ -69,6 +70,7 @@ app.use(morgan('dev'))
 
 // use cors for cross origin accessing
 app.use(cors())
+app.use(express.static('img'));
 
 // routes fo post and user
 // app.use('/user', userRoutes)
