@@ -39,12 +39,12 @@ client.on("messageCreate", async (message) => {
     try {
         if (message.author.id === '936929561302675456' && message.attachments && message.attachments.first() && message.attachments.first().contentType === 'image/png') {
             const attachement = message.attachments.first();
-            readAndSplit(attachement.url, attachement.name.split('.')[0], message);
+            readAndSplit(attachement.url, attachement.name.split('.')[0], message, message.channelId === '1069981948778385428' ? 'furrytag': 'artibar');
             return;
         }
         if (message.content.substring(0, 1) === "*") {
             const imgUrl = 'https://media.discordapp.net/attachments/1069981948778385428/1070037510794793030/dophicham_ultradetailled_ultrarealistic_dog_3D_cartoon_magical__73657eac-ceb8-4640-877f-f124357fbdf8.png';
-            readAndSplit(imgUrl, null, message);
+            readAndSplit(imgUrl, null, message, 'dev');
             return;
             // uploadImgToDiscord()
         }
