@@ -26,7 +26,9 @@
     "helmet": "^3.21.2",
     "morgan": "^1.9.1",
     "multiparty": "^4.2.3",
-    "puppeteer": "^18.1.0"
+    "puppeteer": "^18.2.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
   },
   "devDependencies": {
     "@types/helmet": "^4.0.0",
