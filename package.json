@@ -17,6 +17,7 @@
     "@tensorflow/tfjs-node": "^4.2.0",
     "axios": "^1.2.6",
     "body-parser": "^1.20.1",
+    "bull": "^4.10.3",
     "cors": "^2.8.5",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
