@@ -36,6 +36,7 @@ await page.goto('https://discord.com/channels/1068479267018641468/10684792674800
 
 // Call hcaptcha method passing in our page
 // await hcaptcha(page);
+
 await page.type('#uid_8', DISCORD_USER);
 await page.type('#uid_11', DISCORD_PWD?.trim());
 client.on("ready", async () =>{
