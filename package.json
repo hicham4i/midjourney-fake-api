@@ -28,7 +28,9 @@
     "multiparty": "^4.2.3",
     "puppeteer": "^18.2.1",
     "puppeteer-extra": "^3.3.4",
-    "puppeteer-extra-plugin-stealth": "^2.11.1"
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
+    "puppeteer-hcaptcha": "^4.1.6",
+    "random-useragent": "^0.5.0"
   },
   "devDependencies": {
     "@types/helmet": "^4.0.0",

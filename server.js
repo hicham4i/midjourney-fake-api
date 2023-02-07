@@ -14,6 +14,8 @@ import img2imgRoutes from './routes/img2img.routes.js';
 import { page } from './lib/puppeteer.js';
 import { client } from './lib/discord.js';
 import { readAndSplit, screenBrowser, sendImgToJourney, uploadImgToDiscord } from './lib/utils.js';
+// const { hcaptcha } = require("puppeteer-hcaptcha");
+// import { hcaptcha } from 'puppeteer-hcaptcha';
 
 dotenv.config()
 const token = process.env.DISCORD_TOKEN; //Token that you saved in step 5 of this tutorial
@@ -30,7 +32,10 @@ await page.goto('https://discord.com/channels/1068479267018641468/10684792674800
     // timeout: 0
     waitUntil: "networkidle0",
 });
+// page.setDefaultNavigationTimeout(0);
 
+// Call hcaptcha method passing in our page
+// await hcaptcha(page);
 await page.type('#uid_8', DISCORD_USER);
 await page.type('#uid_11', DISCORD_PWD?.trim());
 client.on("ready", async () =>{
