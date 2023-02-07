@@ -22,7 +22,6 @@
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
-    "express-formidable": "^1.2.0",
     "helmet": "^3.21.2",
     "morgan": "^1.9.1",
     "multiparty": "^4.2.3",
