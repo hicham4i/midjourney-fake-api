@@ -1,5 +1,4 @@
 import express from 'express';
-import { page } from '../lib/puppeteer.js';
 
 const router = express.Router();
 
