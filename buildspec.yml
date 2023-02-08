@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16.13.1
+      nodejs: 16
     commands:
       - echo Installing Mocha...
       - npm install -g mocha  
