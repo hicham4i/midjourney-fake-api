@@ -9,6 +9,10 @@
     "dev": "nodemon server.js",
     "test": "mocha --timeout 30000 --exit"
   },
+  "engines" : { 
+    "npm" : ">=8.0.0 <9.0.0",
+    "node" : ">=16.0.0 <17.0.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
