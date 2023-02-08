@@ -34,4 +34,11 @@ phases:
       - echo run
       # - npm run test
       # - npm prune --production
-      - node server.js
+      # - node server.js
+# Include only the files required for your application to run.
+artifacts:
+  files:
+    - server.js
+    # - src/app.js
+    # - package.json
+    # - node_modules/**/*
