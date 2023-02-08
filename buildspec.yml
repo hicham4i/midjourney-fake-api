@@ -1,0 +1,27 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - echo Installing Mocha...
+      - npm install -g mocha  
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install    
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo BUILD APPS
+      # - npm run test
+      # - npm prune --production
+      - node server.js
+      # - node --max-old-space-size=14336 node_modules/serverless/bin/serverless.js deploy --stage ${STAGE}
+
+      # sync order
+      # - aws s3 sync order-app/ s3://qr-menu-order-${STAGE} --delete
+      # - aws cloudfront create-invalidation --distribution-id ${ORDER_DISTRIBUTION} --paths '/*'
+  post_build:
+    commands:
+      - echo Build completed on `date`
