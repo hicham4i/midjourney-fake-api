@@ -18,7 +18,7 @@ phases:
     commands:
       - echo Build started
       - echo Installing source NPM dependencies...
-      - npm install --production
+      - npm install --omit=dev
       # - echo BUILD APPS
       # - npm run test
       # - npm prune --production
