@@ -20,11 +20,11 @@ phases:
       - npm install    
   build:
     commands:
-      - echo Build started
-      - echo BUILD APPS
+      # - echo Build started
+      # - echo BUILD APPS
       # - npm run test
       # - npm prune --production
-      - node server.js
+      # - node server.js
       # - node --max-old-space-size=14336 node_modules/serverless/bin/serverless.js deploy --stage ${STAGE}
 
       # sync order
@@ -33,3 +33,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo run
+      # - npm run test
+      # - npm prune --production
+      - node server.js
