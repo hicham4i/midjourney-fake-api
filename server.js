@@ -108,6 +108,6 @@ app.get('/',(req,res) => {
 // listen to port
 app.listen(PORT, () => {
     console.log(`Server is running at port ${PORT}`);
-    client.login(token);
+    // client.login(token);
 })
 export default app
