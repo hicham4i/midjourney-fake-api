@@ -42,6 +42,6 @@ artifacts:
     # - src/app.js
     - package.json
     # - node_modules/**/*
-    # - img/**/*
-    # - lib/*
-    # - routes/* 
+    - img/**/*
+    - lib/*
+    - routes/* 
