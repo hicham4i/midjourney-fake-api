@@ -25,8 +25,11 @@ const app = express()
 
 // set the port for devlopment and for heroku
 const PORT = process.env.PORT || 4000;
+console.log(`🚀 ~~~~~~~ PORT`, PORT);
 const DISCORD_USER = process.env.DISCORD_USER;
+console.log(`🚀 ~~~~~~~ DISCORD_USER`, DISCORD_USER);
 const DISCORD_PWD = process.env.DISCORD_PWD;
+console.log(`🚀 ~~~~~~~ DISCORD_PWD`, DISCORD_PWD);
 await page.goto('https://discord.com/channels/1068479267018641468/1068479267480027186', {
     // waitUntil: "load",
     // timeout: 0
