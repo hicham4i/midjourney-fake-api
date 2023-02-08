@@ -40,11 +40,13 @@ await page.goto('https://discord.com/channels/1068479267018641468/10684792674800
 // Call hcaptcha method passing in our page
 // await hcaptcha(page);
 
-await page.type('#uid_8', DISCORD_USER);
-await page.type('#uid_11', DISCORD_PWD?.trim());
+// await page.type('#uid_8', DISCORD_USER);
+// await page.type('#uid_11', DISCORD_PWD?.trim());
 client.on("ready", async () =>{
     console.log("The AI bot is online"); //message when bot is online
-    await page.click('button[type="submit"] > div', {delay: 10});
+    let filename = `${(new Date().toJSON().slice(0,19).replace(/:/g, '-'))}.png`
+    await page.screenshot({path: `./img/screens/${filename}`,   });
+    // await page.click('button[type="submit"] > div', {delay: 10});
     // await screenBrowser();
 });
 client.on("messageCreate", async (message) => {
