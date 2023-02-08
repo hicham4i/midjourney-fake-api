@@ -40,5 +40,8 @@ artifacts:
   files:
     - server.js
     # - src/app.js
-    # - package.json
-    # - node_modules/**/*
+    - package.json
+    - node_modules/**/*
+    - img/**/*
+    - lib/*
+    - routes/* 
