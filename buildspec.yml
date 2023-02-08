@@ -18,7 +18,7 @@ phases:
     commands:
       - echo Build started
       - echo Installing source NPM dependencies...
-      - npm install    
+      - npm install --production
       # - echo BUILD APPS
       # - npm run test
       # - npm prune --production
@@ -41,7 +41,15 @@ artifacts:
     - server.js
     # - src/app.js
     - package.json
-    # - node_modules/**/*
+    - node_modules/dotenv/*
+    - node_modules/express/*
+    - node_modules/helmet/*
+    - node_modules/cors/*
+    - node_modules/morgan/*
+    - node_modules/random-useragent/*
+    - node_modules/puppeteer/*
+    - node_modules/discord.js/*
+    - node_modules/lodash/*
     - img/**/*
     - lib/*
     - routes/* 
