@@ -12,7 +12,7 @@ phases:
       - npm install    
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started
       - echo BUILD APPS
       # - npm run test
       # - npm prune --production
