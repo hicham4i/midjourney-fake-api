@@ -39,8 +39,9 @@ phases:
 artifacts:
   files:
     - server.js
-    # - src/app.js
     - package.json
+    - lib/*
+    - routes/* 
     # - node_modules/dotenv/*
     # - node_modules/express/*
     # - node_modules/helmet/*
@@ -51,5 +52,5 @@ artifacts:
     # - node_modules/discord.js/*
     # - node_modules/**/*
     # - img/**/*
-    # - lib/*
-    # - routes/* 
+    # - src/app.js
+
