@@ -18,7 +18,8 @@ phases:
     commands:
       - echo Build started
       - echo Installing source NPM dependencies...
-      - npm install --omit=dev
+      - npm install
+      # - npm install --omit=dev
 
   post_build:
     commands:
